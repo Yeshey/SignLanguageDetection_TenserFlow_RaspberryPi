@@ -7,6 +7,14 @@ Project to deploy a Machine Learning Model on a Rasberry Pi
 - RasberryPi Credentials:
   - User: pi
   - Passwd: raspberry
+- Wifi Connection:
+  - PC yeshey-hotspot: 
+  - Mobile Hotspot: ssh pi@192.168.208.219
+  - static IP, connected to Yeshey-TP-LINK: ssh pi@192.168.0.103
+  - Commands:
+    - `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf` - file that says wich networks it will connect to
+    - `sudo iwlist wlan0 scanning | grep ESSID` - show available wlan connections
+    - `iwconfig | grep wlan0` - show currently active wlan connection
 
 ## Logical flow of.. steps
 
