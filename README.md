@@ -4,6 +4,8 @@ Project to deploy a Machine Learning Model on a Rasberry Pi
 
 ## Notes
 
+- See Nvidia available memory in linux with `watch -n 0.1 nvidia-smi`
+- Train with `conda activate signLanguageDetector && cd /mnt/DataDisk/PersonalFiles/2022/HAW/EmbeddedMachineLearning/SignLanguageDetection_EmbeddedMachineLearning-RaspberryPi/TensorFlow/workspace/training_demo/ && python model_main_tf2.py --model_dir=models/my_ssd_resnet50_v1_fpn --pipeline_config_path=models/my_ssd_resnet50_v1_fpn/pipeline.config`
 - RasberryPi Credentials:
   - User: pi
   - Passwd: raspberry
@@ -24,6 +26,7 @@ Project to deploy a Machine Learning Model on a Rasberry Pi
   - > General for everyone wanting to annotate images, I can recommend https://supervise.ly/
   - > General Tutorial for image classification: https://www.tensorflow.org/hub/tutorials/tf2_image_retraining
 - Get DataSet of faces (like from https://thispersondoesnotexist.com)
+  - Or find datasets in this site for example: [paperswithcode.com](https://paperswithcode.com) 
 - Label your dataset with something like https://github.com/tzutalin/labelImg
 - Train Model in your home PC GPU 
   - check the links and info in MS Teams to do that
@@ -31,3 +34,11 @@ Project to deploy a Machine Learning Model on a Rasberry Pi
   - Or search for how to make it run on Coral TPU Stick
 - Load it to rasberry Pi and make it work somehow.
   - it has camera, Coral TPU, Keyboard.
+
+## current step:
+- [Currently here](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#training-the-model)
+- [Sign language dataset](https://paperswithcode.com/dataset/wlasl)
+- [Sign language letters dataset2](https://www.kaggle.com/datasets/grassknoted/asl-alphabet)
+
+## State of afairs, and what you'd have to do to make it work from this point
+- you need to download the pretrained model and configure it and run your network afterwards, following the steps from [here](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#download-pre-trained-model)

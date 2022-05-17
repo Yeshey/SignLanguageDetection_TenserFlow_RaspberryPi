@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>image (45).jpg</filename>
+	<path>/mnt/DataDisk/PersonalFiles/2022/HAW/EmbeddedMachineLearning/SignLanguageDetection_EmbeddedMachineLearning-RaspberryPi/TensorFlow/workspace/training_demo/images/image (45).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1024</width>
+		<height>1024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>face</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>232</xmin>
+			<ymin>123</ymin>
+			<xmax>831</xmax>
+			<ymax>951</ymax>
+		</bndbox>
+	</object>
+</annotation>
