@@ -3,9 +3,13 @@ pre-trained-models
 
 # my models
 my_ssd_resnet50_v1_fpn
+!my_ssd_resnet50_v1_fpn/my_ssd_resnet50_v1_fpn/pipeline.config.md
 
 # exported models
 exported-models
+
+# images
+images
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

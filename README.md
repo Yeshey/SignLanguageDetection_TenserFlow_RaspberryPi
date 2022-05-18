@@ -2,6 +2,9 @@
 
 Project to deploy a Machine Learning Model on a Rasberry Pi
 
+# setup
+- run the `firstTimeSetup.py` script to download the dataset and the pre-trained-model
+
 ## Notes
 
 - See Nvidia available memory in linux with `watch -n 0.1 nvidia-smi`
@@ -39,6 +42,10 @@ Project to deploy a Machine Learning Model on a Rasberry Pi
 - [Currently here](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#training-the-model)
 - [Sign language dataset](https://paperswithcode.com/dataset/wlasl)
 - [Sign language letters dataset2](https://www.kaggle.com/datasets/grassknoted/asl-alphabet)
+- [American Sign Language Letters Dataset](https://public.roboflow.com/object-detection/american-sign-language-letters/1)
 
 ## State of afairs, and what you'd have to do to make it work from this point
 - you need to download the pretrained model and configure it and run your network afterwards, following the steps from [here](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#download-pre-trained-model)
+
+## bibliography
+- [had to do this before training](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md#python-package-installation)

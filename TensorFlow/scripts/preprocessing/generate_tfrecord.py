@@ -151,7 +151,6 @@ def create_tf_example(group, path):
     }))
     return tf_example
 
-
 def main(_):
 
     writer = tf.python_io.TFRecordWriter(args.output_path)
