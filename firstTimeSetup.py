@@ -3,10 +3,12 @@ import zipfile
 import os
 import tarfile
 
+print("Running first time setup...")
+
 # check folders
 ckckfldrs = os.listdir("./TensorFlow/workspace/training_demo/")
 
-if (all(ckckfldrs) != "images"):
+if all( i != "images" for i in ckckfldrs):
     os.mkdir("./TensorFlow/workspace/training_demo/images")
     # Downloading database
     print("thanks to https://public.roboflow.com/object-detection/american-sign-language-letters/1 for dataset")
@@ -25,8 +27,10 @@ if (all(ckckfldrs) != "images"):
     for item in os.listdir("./TensorFlow/workspace/training_demo/images/"): # loop through items in dir
         if item.endswith(".zip"): # check for ".zip" extension
             os.remove("./TensorFlow/workspace/training_demo/images/"+ item)
+else:
+    print("images folder already exists")
 
-if (all(ckckfldrs) != "pre-trained-models"):
+if all( i != "pre-trained-models" for i in ckckfldrs):
     os.mkdir("./TensorFlow/workspace/training_demo/pre-trained-models")
     # Downloading Pre-trained model
     print("using SSD ResNet50 V1 FPN 640x640 pre-trained model from https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md")
@@ -45,4 +49,5 @@ if (all(ckckfldrs) != "pre-trained-models"):
     for item in os.listdir("./TensorFlow/workspace/training_demo/pre-trained-models/"): # loop through items in dir
         if item.endswith(".tar.gz"): # check for ".zip" extension
             os.remove("./TensorFlow/workspace/training_demo/pre-trained-models/"+ item)
-
+else:
+    print("pre-trained-models folder already exists")
