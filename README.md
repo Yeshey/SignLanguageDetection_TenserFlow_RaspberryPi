@@ -19,6 +19,7 @@ Project to deploy a Machine Learning Model on a Rasberry Pi
   - Mobile Hotspot: ssh pi@192.168.208.219
   - start `vncserver`
   - static IP, connected to Yeshey-TP-LINK: `ssh pi@192.168.0.103`
+  - Connect using the hostname: `ssh pi@raspberrypi`
   - Commands:
     - `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf` - file that says wich networks it will connect to
     - `sudo iwlist wlan0 scanning | grep ESSID` - show available wlan connections
