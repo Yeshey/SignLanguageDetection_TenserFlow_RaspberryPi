@@ -2,11 +2,13 @@
 
 Project to deploy a Machine Learning Model on a Rasberry Pi
 
-# setup
-- run the `firstTimeSetup.py` script to download the dataset and the pre-trained-model
+# Setup
+
+- follow the `SignLanguageDetection.ipynb` file to setup, train and run the model
 
 ## Notes
 
+- [American sign language letters image](https://www.researchgate.net/publication/346023992/figure/fig1/AS:959642733649922@1605808065864/Fingerspelling-in-American-Sign-Language-which-represents-26-letters-and-10-digits-with.jpg)
 - See Nvidia available memory in linux with `watch -n 0.1 nvidia-smi`
 - Train with `conda activate signLanguageDetector && cd /mnt/DataDisk/PersonalFiles/2022/HAW/EmbeddedMachineLearning/SignLanguageDetection_EmbeddedMachineLearning-RaspberryPi/TensorFlow/workspace/training_demo/ && python model_main_tf2.py --model_dir=models/my_ssd_resnet50_v1_fpn --pipeline_config_path=models/my_ssd_resnet50_v1_fpn/pipeline.config`
 - RasberryPi Credentials:

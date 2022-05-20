@@ -106,7 +106,6 @@ from object_detection.protos import pipeline_pb2
 
 tf.enable_v2_behavior()
 
-
 FLAGS = flags.FLAGS
 
 flags.DEFINE_string('input_type', 'image_tensor', 'Type of input node. Can be '
