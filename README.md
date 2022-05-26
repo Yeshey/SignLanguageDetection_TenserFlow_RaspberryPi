@@ -2,7 +2,7 @@
 
 Project to deploy a Machine Learning Model on a Rasberry Pi
 
-# Setup
+## Setup
 
 - follow the `SignLanguageDetection.ipynb` file to setup, train and run the model
 
@@ -10,16 +10,13 @@ Project to deploy a Machine Learning Model on a Rasberry Pi
 
 - [American sign language letters image](https://www.researchgate.net/publication/346023992/figure/fig1/AS:959642733649922@1605808065864/Fingerspelling-in-American-Sign-Language-which-represents-26-letters-and-10-digits-with.jpg)
 - See Nvidia available memory in linux with `watch -n 0.1 nvidia-smi`
-- Train with `conda activate signLanguageDetector && cd /mnt/DataDisk/PersonalFiles/2022/HAW/EmbeddedMachineLearning/SignLanguageDetection_EmbeddedMachineLearning-RaspberryPi/TensorFlow/workspace/training_demo/ && python model_main_tf2.py --model_dir=models/my_ssd_resnet50_v1_fpn --pipeline_config_path=models/my_ssd_resnet50_v1_fpn/pipeline.config`
+- Activate environment `conda activate signLanguageDetector'
 - RasberryPi Credentials:
   - User: pi
   - Passwd: raspberry
 - Wifi Connection:
-  - PC yeshey-hotspot: 
-  - Mobile Hotspot: ssh pi@192.168.208.219
-  - start `vncserver`
-  - static IP, connected to Yeshey-TP-LINK: `ssh pi@192.168.0.103`
   - Connect using the hostname: `ssh pi@raspberrypi`
+  - Connecting using ip (connected to yeshey-hotspot): 'ssh pi@192.168.12.230'
   - Commands:
     - `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf` - file that says wich networks it will connect to
     - `sudo iwlist wlan0 scanning | grep ESSID` - show available wlan connections
@@ -41,14 +38,7 @@ Project to deploy a Machine Learning Model on a Rasberry Pi
 - Load it to rasberry Pi and make it work somehow.
   - it has camera, Coral TPU, Keyboard.
 
-## current step:
-- [Currently here](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#training-the-model)
-- [Sign language dataset](https://paperswithcode.com/dataset/wlasl)
-- [Sign language letters dataset2](https://www.kaggle.com/datasets/grassknoted/asl-alphabet)
+## references
+- [Tenserflow guide](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html)
 - [American Sign Language Letters Dataset](https://public.roboflow.com/object-detection/american-sign-language-letters/1)
-
-## State of afairs, and what you'd have to do to make it work from this point
-- you need to download the pretrained model and configure it and run your network afterwards, following the steps from [here](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#download-pre-trained-model)
-
-## bibliography
 - [had to do this before training](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md#python-package-installation)
