@@ -1,4 +1,4 @@
-# EmbeddedMachineLearning-RaspberryPi
+# SignLanguageDetection_TenserflowLite
 
 Project to deploy a Machine Learning Model on a Rasberry Pi
 
