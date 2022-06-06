@@ -2,6 +2,8 @@
 
 Project to deploy a Machine Learning Model on a Rasberry Pi
 
+Machine learning based on tensorflow and a costum dataset & convert it to Lite model to run on embedded devices as raspberry pi or android
+
 ## Setup
 
 - follow the `SignLanguageDetection.ipynb` file to setup, train and run the model
