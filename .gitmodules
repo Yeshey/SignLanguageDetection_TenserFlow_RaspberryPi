@@ -1,3 +1,16 @@
 [submodule "TensorFlow/models"]
 	path = TensorFlow/models
 	url = https://github.com/tensorflow/models
+[submodule "RaspberryPi/picamera2Setup/libcamera"]
+	path = RaspberryPi/picamera2Setup/libcamera
+	url = https://github.com/raspberrypi/libcamera.git
+	branch = picamera2
+[submodule "RaspberryPi/picamera2Setup/kmsxx"]
+	path = RaspberryPi/picamera2Setup/kmsxx
+	url = https://github.com/tomba/kmsxx.git
+[submodule "RaspberryPi/picamera2Setup/picamera2"]
+	path = RaspberryPi/picamera2Setup/picamera2
+	url = https://github.com/raspberrypi/picamera2.git
+[submodule "RaspberryPi/picamera2Setup/python-v4l2"]
+	path = RaspberryPi/picamera2Setup/python-v4l2
+	url = https://github.com/RaspberryPiFoundation/python-v4l2.git

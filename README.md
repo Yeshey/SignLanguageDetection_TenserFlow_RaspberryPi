@@ -6,7 +6,7 @@ Machine learning based on tensorflow and a costum dataset & convert it to Lite m
 
 ## Setup
 
-- follow the `SignLanguageDetection.ipynb` file to setup, train and run the model
+- follow the `SignLanguageDetection.ipynb` file to setup, train and run/convert the model
 
 ## Notes
 
