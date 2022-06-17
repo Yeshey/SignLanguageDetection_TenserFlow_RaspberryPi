@@ -6,6 +6,7 @@ Machine learning based on tensorflow and a costum dataset & convert it to Lite m
 
 ## Setup
 
+- clone this repository with `git clone --recurse-submodules -j8 https://github.com/Yeshey/SignLanguageDetection_TenserFlow_RaspberryPi.git`
 - follow the `SignLanguageDetection.ipynb` file to setup, train and run/convert the model
 
 ## Notes
