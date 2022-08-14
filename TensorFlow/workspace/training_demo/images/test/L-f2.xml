@@ -1,0 +1,26 @@
+<annotation>
+	<folder>myPicsFlipV</folder>
+	<filename>L-f2.jpeg</filename>
+	<path>/mnt/DataDisk/PersonalFiles/2022/HAW/EmbeddedMachineLearning/SignLanguageDetection_TenserFlow_RaspberryPi/TensorFlow/workspace/training_demo/images/myPicsFlipV/L-f2.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>390</width>
+		<height>390</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>L</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>82</xmin>
+			<ymin>50</ymin>
+			<xmax>345</xmax>
+			<ymax>302</ymax>
+		</bndbox>
+	</object>
+</annotation>

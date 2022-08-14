@@ -1,0 +1,26 @@
+<annotation>
+	<folder>myPics</folder>
+	<filename>D-b1.jpeg</filename>
+	<path>/mnt/DataDisk/PersonalFiles/2022/HAW/EmbeddedMachineLearning/SignLanguageDetection_TenserFlow_RaspberryPi/TensorFlow/workspace/training_demo/images/myPics/D-b1.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>390</width>
+		<height>390</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>D</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>92</xmin>
+			<ymin>1</ymin>
+			<xmax>287</xmax>
+			<ymax>325</ymax>
+		</bndbox>
+	</object>
+</annotation>

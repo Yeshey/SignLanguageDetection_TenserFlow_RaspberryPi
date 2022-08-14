@@ -12,9 +12,6 @@ my_ssd_resnet50_v1_fpn
 exported-models
 
 # images
-images/test
-images/train
-images/valid
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
